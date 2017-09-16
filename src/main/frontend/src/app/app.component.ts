@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {HelloService} from "./service/hello/hello.service";
+
+import {Menu} from "./models/menu.model";
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,17 @@ import {HelloService} from "./service/hello/hello.service";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
 
-  constructor(private helloService:HelloService){
-    this.helloService.get().then(res=>this.title=res);
+  menus:Menu[];
+
+  constructor(){
+    this.menus = [
+      {
+        name:'Login',
+        icon:'login',
+        routerLink : 'login'
+      },
+    ]
   }
 
 }
