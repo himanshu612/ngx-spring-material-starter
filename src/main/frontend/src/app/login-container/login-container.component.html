@@ -1,3 +1,20 @@
-<p>
-  login-container works!
-</p>
+<div fxLayout="column" fxLayoutAlign="center center">
+  <md-card class="sign-in">
+    <md-card-title>
+      Log in
+    </md-card-title>
+    <md-card-content fxLayout="column">
+      <md-input-container>
+        <input mdInput placeholder="Email" required/>
+      </md-input-container>
+      <md-input-container>
+        <input type="password" mdInput placeholder="Password" required/>
+      </md-input-container>
+    </md-card-content>
+    <md-card-actions >
+      Forgot Password?
+      <span fxFlex></span>
+      <button color="primary" md-raised-button >Log in</button>
+    </md-card-actions>
+  </md-card>
+</div>

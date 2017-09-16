@@ -7,12 +7,13 @@ import {RouterModule} from "@angular/router";
 
 import {
   MdButtonModule,
+  MdCardModule,
   MdIconModule,
   MdInputModule,
   MdListModule,
   MdMenuModule,
-MdSidenavModule,
-MdToolbarModule
+  MdSidenavModule,
+  MdToolbarModule
 } from "@angular/material";
 import 'hammerjs';
 
@@ -38,6 +39,7 @@ import { LoginContainerComponent } from './login-container/login-container.compo
     MdIconModule,
     MdButtonModule,
     MdInputModule,
+    MdCardModule,
     RouterModule.forRoot(routes)
   ],
   providers: [
