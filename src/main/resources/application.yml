@@ -1,0 +1,9 @@
+
+project:
+  name: ngxspring-starter
+  version: 0.0.1
+  description: starter project in ngx spring
+
+server:
+  port: 7777
+  context-path: /ngxspring-starter
