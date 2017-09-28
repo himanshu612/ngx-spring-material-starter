@@ -10,3 +10,9 @@ server:
 spring:
   profiles:
     active: development
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: production
+
